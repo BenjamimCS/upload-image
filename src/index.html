@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../build/main.css">
+  <script src="./js/index.js" type="module" defer></script>
+</head>
+<body class="bg-black">
+<div class="h-screen max-w-4xl xl:max-w-6xl m-auto px-20 py-20 ">
+  <section id="frame" class="rounded">
+    <div class="rounded-tl-md border-[1px] border-gray
+                flex justify-between w-all
+                p-1 font-sans text-white bg-blackgrey" id="header">
+      <span class="text-lightblue select-none" id="caption">preview</span>
+      <div class="cursor-pointer">
+        <form action="./handle.php" method="post" enctype="multipart/form-data">
+          <input class="block hidden w-2/4 opacity-0 cursor-pointer"
+                 id="upload-file"  type="file" name="" id="file-input">
+          <label class="block flex items-center text-lightblue cursor-pointer select-none"
+                 for="upload-file" >
+            <svg class="mx-1 w-[15px] fill-lightblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"/></svg>
+            <span>Upload file</span>
+            <button class="hidden" id="upload-button"></button>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div id="preview" class="hidden mt-[-1px] h-full border-gray border-[1px] border-gray">
+      <img class="hidden" id="preview-img" src="" alt="Upload this image">
+    </div>
+    <div class="text-center h-auto mt-2">
+      <label class="inline-block rounded-lg text-white cursor-pointer text-center bg-blackgrey p-2" for="upload-button">Upload</label>
+    </div>
+  </section>
+</div>
+</body>
+</html>

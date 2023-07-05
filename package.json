@@ -1,0 +1,10 @@
+{
+  "author": "BenjamimCS <uj1kjfomy@mozmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "live-server && tailwindcsstailwindcss -i ./src/main.css -o ./build/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
