@@ -5,6 +5,13 @@
     "start": "live-server && tailwindcsstailwindcss -i ./src/main.css -o ./build/main.css --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.2"
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.0.0",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "webpack-cli": "^5.1.4"
   }
 }
