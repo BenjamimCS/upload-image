@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode=production",
-    "build:dev": "webpack --mode=development"
+    "build:dev": "webpack --mode=development",
+    "watch": "webpack --mode=development --watch"
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
