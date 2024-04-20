@@ -12,8 +12,8 @@ fileInput.addEventListener("change", function() {
   addPreview(previewImg,this.files[0], undefined, true)
 
   if (state.first) {
-    toggleDisplay(preview)
-    toggleDisplay(previewImg)
+    preview.classList.toggle('hidden')
+    previewImg.classList.toggle('hidden')
     state.first = false
   }
 })
